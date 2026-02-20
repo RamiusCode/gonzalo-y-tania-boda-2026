@@ -74,444 +74,446 @@
                 </div>
                 <!-- Texto descriptivo -->
                 <p
-                    class="font-charm text-[#0F3D2E] text-lg md:text-2xl lg:text-3xl leading-relaxed"
+                    class="font-charm text-[#68449a] text-lg md:text-2xl lg:text-3xl leading-relaxed"
                 >
-                    Un evento para adultos está en camino. ¡Así que prepárense
-                    para una noche llena de diversión!
+                    Queremos que esta noche sea una ocasión especial para
+                    compartir entre adultos. Agradecemos de corazón su
+                    comprensión y su presencia en este momento tan importante
+                    para nosotros.
                 </p>
             </div>
         </div>
+
+        <!-- ═════════════════════════════════════════════════════════════ -->
+        <!-- 🌸 HOJAS Y FLORES CON MOVIMIENTO NATURAL - ENCIMA DEL CARD   -->
+        <!-- ═════════════════════════════════════════════════════════════ -->
+
+        <!-- Hoja dorada izquierda (CAPA INFERIOR) -->
+        <img
+            src="/imagenes/hojadorada.png"
+            alt="hoja dorada"
+            class="absolute left-0 top-16 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-20"
+            id="hoja-adultos-left"
+        />
+
+        <!-- Hoja dorada derecha (CAPA INFERIOR) -->
+        <img
+            src="/imagenes/hojadorada.png"
+            alt="hoja dorada"
+            class="absolute right-0 top-16 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-20 scale-x-[-1]"
+            id="hoja-adultos-right"
+        />
+
+        <!-- Flor lateral izquierda (CAPA SUPERIOR) -->
+        <img
+            src="/imagenes/florlateral.png"
+            alt="hojas"
+            class="absolute left-0 top-20 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-30"
+            id="flor-adultos-left"
+        />
+
+        <!-- Flor lateral derecha (CAPA SUPERIOR) -->
+        <img
+            src="/imagenes/florlateral.png"
+            alt="hojas"
+            class="absolute right-0 top-20 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-30 scale-x-[-1]"
+            id="flor-adultos-right"
+        />
     </div>
 
-    <!-- ═════════════════════════════════════════════════════════════ -->
-    <!-- 🌸 HOJAS Y FLORES CON MOVIMIENTO NATURAL - ENCIMA DEL CARD   -->
-    <!-- ═════════════════════════════════════════════════════════════ -->
-
-    <!-- Hoja dorada izquierda (CAPA INFERIOR) -->
-    <img
-        src="/imagenes/hojadorada.png"
-        alt="hoja dorada"
-        class="absolute left-0 top-16 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-20"
-        id="hoja-adultos-left"
-    />
-
-    <!-- Hoja dorada derecha (CAPA INFERIOR) -->
-    <img
-        src="/imagenes/hojadorada.png"
-        alt="hoja dorada"
-        class="absolute right-0 top-16 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-20 scale-x-[-1]"
-        id="hoja-adultos-right"
-    />
-
-    <!-- Flor lateral izquierda (CAPA SUPERIOR) -->
-    <img
-        src="/imagenes/florlateral.png"
-        alt="hojas"
-        class="absolute left-0 top-20 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-30"
-        id="flor-adultos-left"
-    />
-
-    <!-- Flor lateral derecha (CAPA SUPERIOR) -->
-    <img
-        src="/imagenes/florlateral.png"
-        alt="hojas"
-        class="absolute right-0 top-20 md:top-24 w-18 h-18 md:w-28 md:h-28 opacity-0 pointer-events-none z-30 scale-x-[-1]"
-        id="flor-adultos-right"
-    />
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- 🎨 ESTILOS PERSONALIZADOS                                   -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<style>
-    /* Partículas flotantes doradas */
-    .particula-dorada {
-        position: absolute;
-        width: 4px;
-        height: 4px;
-        background: radial-gradient(circle, #9c7a2e 0%, transparent 70%);
-        border-radius: 50%;
-        animation: flotar 6s ease-in-out infinite;
-        opacity: 0.4;
-    }
-    @keyframes flotar {
-        0%,
-        100% {
-            transform: translateY(0) translateX(0);
-            opacity: 0.2;
-        }
-        50% {
-            transform: translateY(-30px) translateX(15px);
-            opacity: 0.6;
-        }
-    }
-    /* Animación de pulso lento */
-    @keyframes pulse-slow {
-        0%,
-        100% {
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🎨 ESTILOS PERSONALIZADOS                                   -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <style>
+        /* Partículas flotantes doradas */
+        .particula-dorada {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, #9c7a2e 0%, transparent 70%);
+            border-radius: 50%;
+            animation: flotar 6s ease-in-out infinite;
             opacity: 0.4;
-            transform: scale(1);
         }
-        50% {
-            opacity: 0.6;
-            transform: scale(1.05);
+        @keyframes flotar {
+            0%,
+            100% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.2;
+            }
+            50% {
+                transform: translateY(-30px) translateX(15px);
+                opacity: 0.6;
+            }
         }
-    }
-    .animate-pulse-slow {
-        animation: pulse-slow 4s ease-in-out infinite;
-    }
-    /* Animación suave del icono */
-    .adultos-icon-container:hover svg {
-        animation: bounce-gentle 0.6s ease;
-    }
-    @keyframes bounce-gentle {
-        0%,
-        100% {
-            transform: translateY(0) scale(1);
+        /* Animación de pulso lento */
+        @keyframes pulse-slow {
+            0%,
+            100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.05);
+            }
         }
-        50% {
-            transform: translateY(-8px) scale(1.05);
+        .animate-pulse-slow {
+            animation: pulse-slow 4s ease-in-out infinite;
         }
-    }
-    /* Filtro que convierte imágenes PNG negras al color #0F3D2E */
-    .verde-filter {
-        filter: brightness(0) saturate(100%) invert(18%) sepia(42%)
-            saturate(525%) hue-rotate(115deg) brightness(78%) contrast(105%);
-    }
-</style>
+        /* Animación suave del icono */
+        .adultos-icon-container:hover svg {
+            animation: bounce-gentle 0.6s ease;
+        }
+        @keyframes bounce-gentle {
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-8px) scale(1.05);
+            }
+        }
+        /* Filtro que convierte imágenes PNG negras al color #0F3D2E */
+        .verde-filter {
+            filter: brightness(0) saturate(100%) invert(28%) sepia(40%)
+                saturate(800%) hue-rotate(250deg) brightness(70%) contrast(110%);
+        }
+    </style>
 
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- 🎬 ANIMACIONES CON GSAP - CON HOJAS DECORATIVAS             -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<script>
-    import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
-    gsap.registerPlugin(ScrollTrigger);
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🎬 ANIMACIONES CON GSAP - CON HOJAS DECORATIVAS             -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <script>
+        import { gsap } from "gsap";
+        import { ScrollTrigger } from "gsap/ScrollTrigger";
+        gsap.registerPlugin(ScrollTrigger);
 
-    const initAdultos = () => {
-        console.log("🍾 Iniciando sección Solo Adultos...");
+        const initAdultos = () => {
+            console.log("🍾 Iniciando sección Solo Adultos...");
 
-        // ═══ ESTADO INICIAL ═══
-        gsap.set("#contenedor-adultos", {
-            opacity: 0,
-            y: 50,
-            scale: 0.95,
-        });
+            // ═══ ESTADO INICIAL ═══
+            gsap.set("#contenedor-adultos", {
+                opacity: 0,
+                y: 50,
+                scale: 0.95,
+            });
 
-        // Flores laterales - Estado inicial
-        gsap.set("#flor-adultos-left", {
-            opacity: 0,
-            x: -40,
-            rotation: -8,
-            scale: 0.9,
-        });
+            // Flores laterales - Estado inicial
+            gsap.set("#flor-adultos-left", {
+                opacity: 0,
+                x: -40,
+                rotation: -8,
+                scale: 0.9,
+            });
 
-        gsap.set("#flor-adultos-right", {
-            opacity: 0,
-            x: 40,
-            rotation: 8,
-            scaleX: -0.9,
-            scaleY: 0.9,
-        });
+            gsap.set("#flor-adultos-right", {
+                opacity: 0,
+                x: 40,
+                rotation: 8,
+                scaleX: -0.9,
+                scaleY: 0.9,
+            });
 
-        // Hojas doradas - Estado inicial
-        gsap.set("#hoja-adultos-left", {
-            opacity: 0,
-            scale: 0,
-            rotation: -6,
-            transformOrigin: "bottom center",
-        });
+            // Hojas doradas - Estado inicial
+            gsap.set("#hoja-adultos-left", {
+                opacity: 0,
+                scale: 0,
+                rotation: -6,
+                transformOrigin: "bottom center",
+            });
 
-        gsap.set("#hoja-adultos-right", {
-            opacity: 0,
-            scaleX: 0,
-            scaleY: 0,
-            rotation: 6,
-            transformOrigin: "bottom center",
-        });
+            gsap.set("#hoja-adultos-right", {
+                opacity: 0,
+                scaleX: 0,
+                scaleY: 0,
+                rotation: 6,
+                transformOrigin: "bottom center",
+            });
 
-        gsap.set("#tarjeta-adultos", { opacity: 0, y: 20 });
+            gsap.set("#tarjeta-adultos", { opacity: 0, y: 20 });
 
-        // ═══ ANIMACIÓN PRINCIPAL ═══
-        ScrollTrigger.create({
-            trigger: "#contenedor-adultos",
-            start: "top 75%",
-            end: "top 20%",
+            // ═══ ANIMACIÓN PRINCIPAL ═══
+            ScrollTrigger.create({
+                trigger: "#contenedor-adultos",
+                start: "top 75%",
+                end: "top 20%",
 
-            onEnter: () => {
-                const tl = gsap.timeline();
+                onEnter: () => {
+                    const tl = gsap.timeline();
 
-                // Card aparece
-                tl.to(
-                    "#contenedor-adultos",
-                    {
-                        opacity: 1,
-                        y: 0,
-                        scale: 1,
-                        duration: 1.6,
-                        ease: "power3.out",
-                    },
-                    0,
-                )
-
-                    // 🌸 FLORES LATERALES - Entrada suave
-                    .to(
-                        "#flor-adultos-left",
+                    // Card aparece
+                    tl.to(
+                        "#contenedor-adultos",
                         {
-                            opacity: 0.75,
-                            x: 0,
-                            rotation: -3,
+                            opacity: 1,
+                            y: 0,
                             scale: 1,
-                            duration: 2.8,
-                            ease: "sine.out",
+                            duration: 1.6,
+                            ease: "power3.out",
                         },
                         0,
                     )
 
-                    .to(
-                        "#flor-adultos-right",
-                        {
-                            opacity: 0.75,
-                            x: 0,
-                            rotation: 3,
-                            scaleX: -1,
-                            scaleY: 1,
-                            duration: 2.8,
-                            ease: "sine.out",
-                        },
-                        0.05,
-                    )
+                        // 🌸 FLORES LATERALES - Entrada suave
+                        .to(
+                            "#flor-adultos-left",
+                            {
+                                opacity: 0.75,
+                                x: 0,
+                                rotation: -3,
+                                scale: 1,
+                                duration: 2.8,
+                                ease: "sine.out",
+                            },
+                            0,
+                        )
 
-                    // 🍃 HOJAS DORADAS - Crecimiento natural
-                    .to(
-                        "#hoja-adultos-left",
-                        {
-                            opacity: 0.7,
+                        .to(
+                            "#flor-adultos-right",
+                            {
+                                opacity: 0.75,
+                                x: 0,
+                                rotation: 3,
+                                scaleX: -1,
+                                scaleY: 1,
+                                duration: 2.8,
+                                ease: "sine.out",
+                            },
+                            0.05,
+                        )
+
+                        // 🍃 HOJAS DORADAS - Crecimiento natural
+                        .to(
+                            "#hoja-adultos-left",
+                            {
+                                opacity: 0.7,
+                                scale: 0.9,
+                                rotation: -3,
+                                duration: 2.2,
+                                ease: "sine.out",
+                            },
+                            0.1,
+                        )
+
+                        .to(
+                            "#hoja-adultos-right",
+                            {
+                                opacity: 0.7,
+                                scaleX: -0.9,
+                                scaleY: 0.9,
+                                rotation: 3,
+                                duration: 2.2,
+                                ease: "sine.out",
+                            },
+                            0.15,
+                        )
+
+                        // Contenido del card
+                        .to(
+                            "#tarjeta-adultos",
+                            {
+                                opacity: 1,
+                                y: 0,
+                                duration: 1,
+                                ease: "power2.out",
+                            },
+                            0.8,
+                        );
+
+                    // ═══════════════════════════════════════════════════
+                    // 🍃 MOVIMIENTOS MÁS NOTORIOS Y NATURALES
+                    // ═══════════════════════════════════════════════════
+
+                    // Flor izquierda - Movimiento más amplio
+                    gsap.to("#flor-adultos-left", {
+                        y: -15,
+                        x: -8,
+                        rotation: -12,
+                        duration: 3,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 3,
+                    });
+
+                    // Flor derecha - Movimiento más amplio inverso
+                    gsap.to("#flor-adultos-right", {
+                        y: -12,
+                        x: 8,
+                        rotation: 12,
+                        duration: 3.3,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 3.2,
+                    });
+
+                    // Hoja izquierda - Balanceo más pronunciado
+                    gsap.to("#hoja-adultos-left", {
+                        y: -18,
+                        rotation: -15,
+                        duration: 3.5,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 3.3,
+                    });
+
+                    // Hoja derecha - Balanceo más pronunciado
+                    gsap.to("#hoja-adultos-right", {
+                        y: -16,
+                        rotation: 15,
+                        duration: 3.8,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 3.5,
+                    });
+
+                    // ═══ RESPIRACIÓN MÁS VISIBLE ═══
+                    gsap.to("#hoja-adultos-left", {
+                        scale: 0.8,
+                        duration: 4,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 4,
+                    });
+
+                    gsap.to("#hoja-adultos-right", {
+                        scaleX: -0.8,
+                        scaleY: 0.8,
+                        duration: 4.5,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 4.3,
+                    });
+
+                    // ═══ MOVIMIENTO HORIZONTAL ADICIONAL (Efecto brisa) ═══
+                    gsap.to("#flor-adultos-left", {
+                        x: -12,
+                        duration: 5,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 4.5,
+                    });
+
+                    gsap.to("#flor-adultos-right", {
+                        x: 12,
+                        duration: 5.5,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "sine.inOut",
+                        delay: 4.8,
+                    });
+                },
+
+                onLeaveBack: () => {
+                    // Resetear todas las animaciones continuas
+                    gsap.killTweensOf("#flor-adultos-left");
+                    gsap.killTweensOf("#flor-adultos-right");
+                    gsap.killTweensOf("#hoja-adultos-left");
+                    gsap.killTweensOf("#hoja-adultos-right");
+
+                    const tl = gsap.timeline();
+
+                    tl.to("#tarjeta-adultos", {
+                        opacity: 0,
+                        y: 20,
+                        duration: 0.3,
+                        ease: "power2.in",
+                    })
+
+                        .to(
+                            "#contenedor-adultos",
+                            {
+                                opacity: 0,
+                                y: 50,
+                                scale: 0.95,
+                                duration: 0.5,
+                                ease: "power2.in",
+                            },
+                            "<",
+                        )
+
+                        .to(
+                            "#flor-adultos-left",
+                            {
+                                opacity: 0,
+                                x: -40,
+                                duration: 1,
+                                ease: "sine.in",
+                            },
+                            "<",
+                        )
+
+                        .to(
+                            "#flor-adultos-right",
+                            {
+                                opacity: 0,
+                                x: 40,
+                                duration: 1,
+                                ease: "sine.in",
+                            },
+                            "<",
+                        )
+
+                        .to(
+                            "#hoja-adultos-left, #hoja-adultos-right",
+                            {
+                                opacity: 0,
+                                scale: 0,
+                                duration: 0.8,
+                                ease: "sine.in",
+                            },
+                            "<",
+                        )
+
+                        .set("#flor-adultos-left", {
+                            rotation: -8,
                             scale: 0.9,
-                            rotation: -3,
-                            duration: 2.2,
-                            ease: "sine.out",
-                        },
-                        0.1,
-                    )
-
-                    .to(
-                        "#hoja-adultos-right",
-                        {
-                            opacity: 0.7,
+                            x: -40,
+                            y: 0,
+                        })
+                        .set("#flor-adultos-right", {
+                            rotation: 8,
                             scaleX: -0.9,
                             scaleY: 0.9,
-                            rotation: 3,
-                            duration: 2.2,
-                            ease: "sine.out",
-                        },
-                        0.15,
-                    )
-
-                    // Contenido del card
-                    .to(
-                        "#tarjeta-adultos",
-                        {
-                            opacity: 1,
-                            y: 0,
-                            duration: 1,
-                            ease: "power2.out",
-                        },
-                        0.8,
-                    );
-
-                // ═══════════════════════════════════════════════════
-                // 🍃 MOVIMIENTOS MÁS NOTORIOS Y NATURALES
-                // ═══════════════════════════════════════════════════
-
-                // Flor izquierda - Movimiento más amplio
-                gsap.to("#flor-adultos-left", {
-                    y: -15,
-                    x: -8,
-                    rotation: -12,
-                    duration: 3,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 3,
-                });
-
-                // Flor derecha - Movimiento más amplio inverso
-                gsap.to("#flor-adultos-right", {
-                    y: -12,
-                    x: 8,
-                    rotation: 12,
-                    duration: 3.3,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 3.2,
-                });
-
-                // Hoja izquierda - Balanceo más pronunciado
-                gsap.to("#hoja-adultos-left", {
-                    y: -18,
-                    rotation: -15,
-                    duration: 3.5,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 3.3,
-                });
-
-                // Hoja derecha - Balanceo más pronunciado
-                gsap.to("#hoja-adultos-right", {
-                    y: -16,
-                    rotation: 15,
-                    duration: 3.8,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 3.5,
-                });
-
-                // ═══ RESPIRACIÓN MÁS VISIBLE ═══
-                gsap.to("#hoja-adultos-left", {
-                    scale: 0.8,
-                    duration: 4,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 4,
-                });
-
-                gsap.to("#hoja-adultos-right", {
-                    scaleX: -0.8,
-                    scaleY: 0.8,
-                    duration: 4.5,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 4.3,
-                });
-
-                // ═══ MOVIMIENTO HORIZONTAL ADICIONAL (Efecto brisa) ═══
-                gsap.to("#flor-adultos-left", {
-                    x: -12,
-                    duration: 5,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 4.5,
-                });
-
-                gsap.to("#flor-adultos-right", {
-                    x: 12,
-                    duration: 5.5,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut",
-                    delay: 4.8,
-                });
-            },
-
-            onLeaveBack: () => {
-                // Resetear todas las animaciones continuas
-                gsap.killTweensOf("#flor-adultos-left");
-                gsap.killTweensOf("#flor-adultos-right");
-                gsap.killTweensOf("#hoja-adultos-left");
-                gsap.killTweensOf("#hoja-adultos-right");
-
-                const tl = gsap.timeline();
-
-                tl.to("#tarjeta-adultos", {
-                    opacity: 0,
-                    y: 20,
-                    duration: 0.3,
-                    ease: "power2.in",
-                })
-
-                    .to(
-                        "#contenedor-adultos",
-                        {
-                            opacity: 0,
-                            y: 50,
-                            scale: 0.95,
-                            duration: 0.5,
-                            ease: "power2.in",
-                        },
-                        "<",
-                    )
-
-                    .to(
-                        "#flor-adultos-left",
-                        {
-                            opacity: 0,
-                            x: -40,
-                            duration: 1,
-                            ease: "sine.in",
-                        },
-                        "<",
-                    )
-
-                    .to(
-                        "#flor-adultos-right",
-                        {
-                            opacity: 0,
                             x: 40,
-                            duration: 1,
-                            ease: "sine.in",
-                        },
-                        "<",
-                    )
-
-                    .to(
-                        "#hoja-adultos-left, #hoja-adultos-right",
-                        {
-                            opacity: 0,
+                            y: 0,
+                        })
+                        .set("#hoja-adultos-left", {
+                            rotation: -6,
                             scale: 0,
-                            duration: 0.8,
-                            ease: "sine.in",
-                        },
-                        "<",
-                    )
+                            y: 0,
+                        })
+                        .set("#hoja-adultos-right", {
+                            scaleX: 0,
+                            scaleY: 0,
+                            rotation: 6,
+                            y: 0,
+                        });
+                },
+            });
 
-                    .set("#flor-adultos-left", {
-                        rotation: -8,
-                        scale: 0.9,
-                        x: -40,
-                        y: 0,
-                    })
-                    .set("#flor-adultos-right", {
-                        rotation: 8,
-                        scaleX: -0.9,
-                        scaleY: 0.9,
-                        x: 40,
-                        y: 0,
-                    })
-                    .set("#hoja-adultos-left", {
-                        rotation: -6,
-                        scale: 0,
-                        y: 0,
-                    })
-                    .set("#hoja-adultos-right", {
-                        scaleX: 0,
-                        scaleY: 0,
-                        rotation: 6,
-                        y: 0,
-                    });
-            },
-        });
+            console.log("🍾✨ Sección Solo Adultos con hojas vivas activada!");
+        };
 
-        console.log("🍾✨ Sección Solo Adultos con hojas vivas activada!");
-    };
+        document.addEventListener("DOMContentLoaded", initAdultos);
+        document.addEventListener("astro:page-load", initAdultos);
+    </script>
 
-    document.addEventListener("DOMContentLoaded", initAdultos);
-    document.addEventListener("astro:page-load", initAdultos);
-</script>
-
-<!-- ═══════════════════════════════════════════════════════════ -->
-<!-- 🎨 ESTILOS PARA CONVERTIR IMÁGENES NEGRAS A DORADO          -->
-<!-- ═══════════════════════════════════════════════════════════ -->
-<style>
-    /* Filtro que convierte imágenes PNG negras al color dorado #9C7A2E */
-    .verde-filter {
-        filter: brightness(0) saturate(100%) invert(18%) sepia(42%)
-            saturate(525%) hue-rotate(115deg) brightness(78%) contrast(105%);
-    }
-</style>
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <!-- 🎨 ESTILOS PARA CONVERTIR IMÁGENES NEGRAS A DORADO          -->
+    <!-- ═══════════════════════════════════════════════════════════ -->
+    <style>
+        /* Filtro que convierte imágenes PNG negras al color dorado #9C7A2E */
+        .verde-filter {
+            filter: brightness(0) saturate(100%) invert(18%) sepia(42%)
+                saturate(525%) hue-rotate(115deg) brightness(78%) contrast(105%);
+        }
+    </style>
+</section>
